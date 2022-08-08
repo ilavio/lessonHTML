@@ -1,0 +1,24 @@
+.form1,
+.form2,
+.form3 {
+    border: 3px solid #646464;
+    width: 800px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.form1{
+    overflow: hidden;
+}
+
+.form1 label{
+    float: left;
+	width: 20%;
+}
+
+#surname,
+#name,
+#second_name,
+#mail {
+    margin: 5px;
+}

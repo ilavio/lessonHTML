@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url("forLessonFormInput.css");
+    </style>
+    <title>Форма анкеты</title>
+</head>
+
+<body>
+
+    <form action="index.html" method="get" class="sendForm">
+        <!--способ отпрвки get - значит значения будут видны в адресной строке, значения отправится на страницу index.html-->
+
+        <div class="form1">
+            <fieldset>
+                <legend>Общая информация</legend>
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" placeholder="Иванов" name="surname"><br>
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Иван" name="name"><br>
+                <label for="second_name">Отчество</label>
+                <input type="text" id="second_name" placeholder="Иванович" name="second_name"><br>
+                <label for="mail">email</label>
+                <input type="text" id="mail" placeholder="mail@mail.ru" name="mail">
+            </fieldset>
+        </div>
+        <div class="form2">
+            <fieldset>
+                <legend>Пол</legend>
+                <!--здесь кнопки radio - может быть выбрано только одно-->
+                <label for="man">М</label>
+                <!--фтрибут name должен бфть одинаков для списка выбора-->
+                <input id="man" type="radio" name="gender" value="man">
+                <lablel for="woman">Ж</lablel>
+                <!-- value - указывает что отправить в случае выбора данного элемента-->
+                <input id="woman" type="radio" name="gender" value="woman">
+            </fieldset>
+        </div>
+        <div class="form3">
+            <fieldset>
+                <legend>Хобби</legend>
+                <label for="draw">Рисование</label>
+                <input id="draw" type="checkbox" name="hobby" value="draw">
+                <label for="read">Чтение</label>
+                <input id="read" type="checkbox" name="hobby" value="read">
+                <label for="knit">Вязание</label>
+                <input id="knit" type="checkbox" name="hobby" value="knit">
+                <label for="cooking">Кулинария</label>
+                <input id="cooking" type="checkbox" name="hobby" value="cooking">
+            </fieldset>
+        </div>
+        <button>Отправить</button> <button type="reset">Очистить</button>
+
+    </form>
+
+</body>
+
+</html>
